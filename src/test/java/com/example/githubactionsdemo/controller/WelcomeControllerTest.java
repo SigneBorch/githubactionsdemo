@@ -28,6 +28,6 @@ class WelcomeControllerTest {
     public void testSayHello() throws Exception{
         mockMvc.perform(get("/")).andExpect(status().isOk())
                 .andExpect(view().name("welcome"));
-        fail("Made the test fail on purpose");
+
     }
 }
